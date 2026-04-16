@@ -3,10 +3,10 @@ Requirements
 [  ] $() Select by Element, ID AND Class 
 [  ] Use Three Different jQuery Methods 
 [  ] Add Five CSS Declarations
-[  ] Include Three Images
+[yes] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ yes ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -24,7 +24,7 @@ Select ONE Additional
     <button id="boo1-button">Book #1</button>
     <button id="boo2-button">Book #2</button>
     <button id="boo3-button">Book #3</button>
-    <h1>My Top 3 Books of <span>This Year</span></h1>
+    <h1>My Top 3 Books of <span>Senior Year</span></h1>
     <ol>
       <li>
         <h3 id="boo1">Book #1</h3> 
@@ -38,23 +38,36 @@ Babel is the world's center for translation and, more importantly, magic. The un
 For Robin, Oxford is a utopia dedicated to the pursuit of knowledge. But knowledge obeys power, and as a Chinese boy raised in Britain, Robin realizes serving Babel means betraying his motherland. As his studies progress, Robin finds himself caught between Babel and the shadowy Hermes Society, a secret society dedicated to stopping imperial expansion. When Britain pursues an unjust war with China over silver and opium, Robin must decide…</em></p>
        
       </li>
-      </li>
+      
 
       <li>
         <h3 id="boo2">Book #2</h3>
-        <p>More about this book.</p>
-       
+        <img class="Book2" src="https://m.media-amazon.com/images/I/61yArGR8YkL._AC_UF1000,1000_QL80_.jpg">
+           <p id="summary2"><em>Years ago, when House of Leaves was first being passed around, it was nothing more than a badly bundled heap of paper, parts of which would occasionally surface on the Internet. No one could have anticipated the small but devoted following this terrifying story would soon command. Starting with an odd assortment of marginalized youth—musicians, tattoo artists, programmers, strippers, environmentalists, and adrenaline junkies—the book eventually made its way into the hands of older generations, who not only found themselves in those strangely arranged pages but also discovered a way back into the lives of their estranged children.
 
+Now made available in book form, complete with the original colored words, vertical footnotes, and second and third appendices, the story remains unchanged. Similarly, the cultural fascination with House of Leaves remains as fervent and as imaginative as ever. The novel has gone on to inspire doctorate-level courses and masters theses, cultural phenomena like the online urban legend of “the backrooms,” and incredible works of art in entirely unrealted mediums from music to video games.
+ 
+Neither Pulitzer Prize-winning photojournalist Will Navidson nor his companion Karen Green was prepared to face the consequences of the impossibility of their new home, until the day their two little children wandered off and their voices eerily began to return another story—of creature darkness, of an ever-growing abyss behind a closet door, and of that unholy growl which soon enough would tear through their walls and consume all their dreams.
+</em>
+</p>
+</li>
       <li>
         <h3 id="boo3">Book #3</h3>
-        <p>More about this book</p>
+        <img class="Book3" src="https://s26162.pcdn.co/wp-content/uploads/2020/09/wehvealwayslived.jpg">
+        <p id="summary3"><em>"Merricat," said Constance, 
+      "Would you like a cup of tea?" "Oh no," said Merricat, "You'll poison me."</em></p>
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+      $(".Book2").css("width","200px");
 $(".Book1").hide();
 $("#summary1").hide();
+$(".Book3").hide();
+$("#summary3").hide();
+$(".Book2").hide();
+$("#summary2").hide();
       // ======================== Button #1
       $("#boo1-button").click(function () {
         $("#boo1").css("color", "grey").text("Babel, or the Necessity of Violence");
@@ -64,13 +77,17 @@ $("#summary1").hide();
 
       // ======================== Button #2
       $("#boo2-button").click(function () {
-        $("#boo2").css("color", "blue");
+        $("#boo2").css("color", "midnightblue").text("House Of Leaves");
+        $(".Book2").show(2000).css("width","200px");
+        $("#summary2").show();
       });
 
       // ======================== Button #3
       $("#boo3-button").click(function () {
-        $("#boo3").css("color", "green");
-        $("#boo3").text("Coding Parties! 🎉");
+        $("#boo3").css("color", "deeppink").text("We Have Always Lived In the Castle");
+        $(".Book3").show(2000);
+        $("#summary3").show();
+       
       });
 
 
