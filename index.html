@@ -1,8 +1,8 @@
 <!-- Unit 11 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
+[yes] $() Select by Element, ID AND Class 
+[yes] Use Three Different jQuery Methods 
+[yes] Add Five CSS Declarations
 [yes] Include Three Images
 
 Select ONE Additional 
@@ -31,11 +31,18 @@ Select ONE Additional
         <img class="Book1" src="https://m.media-amazon.com/images/I/A1lv97-jJoL._AC_UF1000,1000_QL80_.jpg">
         <p id="summary1"><em>Traduttore, traditore: An act of translation is always an act of betrayal.
 
-1828. Robin Swift, orphaned by cholera in Canton, is brought to London by the mysterious Professor Lovell. There, he trains for years in Latin, Ancient Greek, and Chinese, all in preparation for the day he’ll enroll in Oxford University’s prestigious Royal Institute of Translation―also known as Babel.
+1828. Robin Swift, orphaned by cholera in Canton, is brought to London by the mysterious Professor Lovell. There, he trains for years 
+in Latin, Ancient Greek, and Chinese, all in preparation for the day he’ll enroll in Oxford University’s prestigious Royal Institute of
+ Translation―also known as Babel.
 
-Babel is the world's center for translation and, more importantly, magic. The unique magic system of silver working―the art of manifesting the meaning lost in translation using enchanted silver bars―has made the British unparalleled in power, as its knowledge serves the Empire’s quest for colonization.
+Babel is the world's center for translation and, more importantly, magic. The unique magic system of silver working―the art of 
+manifesting the meaning lost in translation using enchanted silver bars―has made the British unparalleled in power, as its knowledge 
+serves the Empire’s quest for colonization.
 
-For Robin, Oxford is a utopia dedicated to the pursuit of knowledge. But knowledge obeys power, and as a Chinese boy raised in Britain, Robin realizes serving Babel means betraying his motherland. As his studies progress, Robin finds himself caught between Babel and the shadowy Hermes Society, a secret society dedicated to stopping imperial expansion. When Britain pursues an unjust war with China over silver and opium, Robin must decide…</em></p>
+For Robin, Oxford is a utopia dedicated to the pursuit of knowledge. But knowledge obeys power, and as a Chinese boy raised in 
+Britain, Robin realizes serving Babel means betraying his motherland. As his studies progress, Robin finds himself caught between 
+Babel and the shadowy Hermes Society, a secret society dedicated to stopping imperial expansion. When Britain pursues an unjust war 
+with China over silver and opium, Robin must decide…</em></p>
        
       </li>
       
@@ -43,11 +50,24 @@ For Robin, Oxford is a utopia dedicated to the pursuit of knowledge. But knowled
       <li>
         <h3 id="boo2">Book #2</h3>
         <img class="Book2" src="https://m.media-amazon.com/images/I/61yArGR8YkL._AC_UF1000,1000_QL80_.jpg">
-           <p id="summary2"><em>Years ago, when House of Leaves was first being passed around, it was nothing more than a badly bundled heap of paper, parts of which would occasionally surface on the Internet. No one could have anticipated the small but devoted following this terrifying story would soon command. Starting with an odd assortment of marginalized youth—musicians, tattoo artists, programmers, strippers, environmentalists, and adrenaline junkies—the book eventually made its way into the hands of older generations, who not only found themselves in those strangely arranged pages but also discovered a way back into the lives of their estranged children.
+           <p id="summary2"><em>Years ago, when House of Leaves was first being passed around, it was nothing 
+            more than a badly bundled heap of paper, parts of which would occasionally surface on the Internet. 
+            No one could have anticipated the small but devoted following this terrifying story would soon command.
+             Starting with an odd assortment of marginalized youth—musicians, tattoo artists, programmers, strippers,
+              environmentalists, and adrenaline junkies—the book eventually made its way into the hands of older generations, 
+              who not only found themselves in those strangely arranged pages but also discovered a way back into the lives of 
+              their estranged children.
 
-Now made available in book form, complete with the original colored words, vertical footnotes, and second and third appendices, the story remains unchanged. Similarly, the cultural fascination with House of Leaves remains as fervent and as imaginative as ever. The novel has gone on to inspire doctorate-level courses and masters theses, cultural phenomena like the online urban legend of “the backrooms,” and incredible works of art in entirely unrealted mediums from music to video games.
+Now made available in book form, complete with the original colored words, vertical footnotes, 
+and second and third appendices, the story remains unchanged. Similarly, the cultural fascination with House 
+of Leaves remains as fervent and as imaginative as ever. The novel has gone on to inspire doctorate-level courses and 
+masters theses, cultural phenomena like the online urban legend of “the backrooms,” and incredible works of art in entirely 
+unrealted mediums from music to video games.
  
-Neither Pulitzer Prize-winning photojournalist Will Navidson nor his companion Karen Green was prepared to face the consequences of the impossibility of their new home, until the day their two little children wandered off and their voices eerily began to return another story—of creature darkness, of an ever-growing abyss behind a closet door, and of that unholy growl which soon enough would tear through their walls and consume all their dreams.
+Neither Pulitzer Prize-winning photojournalist Will Navidson nor his companion Karen Green was prepared to face the 
+consequences of the impossibility of their new home, until the day their two little children wandered off and their voices 
+eerily began to return another story—of creature darkness, of an ever-growing abyss behind a closet door, and of that 
+unholy growl which soon enough would tear through their walls and consume all their dreams.
 </em>
 </p>
 </li>
@@ -62,12 +82,16 @@ Neither Pulitzer Prize-winning photojournalist Will Navidson nor his companion K
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $(".Book2").css("width","200px");
+      $(".Book1").css("width","200px");
+      $(".Book3").css("width","200px");
 $(".Book1").hide();
 $("#summary1").hide();
 $(".Book3").hide();
 $("#summary3").hide();
 $(".Book2").hide();
 $("#summary2").hide();
+
+$("span").css("color","darkgreen");
       // ======================== Button #1
       $("#boo1-button").click(function () {
         $("#boo1").css("color", "grey").text("Babel, or the Necessity of Violence");
